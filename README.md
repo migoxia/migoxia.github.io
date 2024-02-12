@@ -1,1 +1,1 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+This is the source code to my public academic website: https://migoxia.github.io/, using the template from Jon Barron's website: https://jonbarron.info/.
