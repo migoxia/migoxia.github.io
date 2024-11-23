@@ -2,140 +2,128 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Shujun Xia</title>
-
     <meta name="author" content="Shujun Xia">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/Kirby.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
+    <style>
+      /* 全局字体样式 */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        text-align: left;
+      }
+      .papertitle {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      p {
+        margin: 0.5em 0;
+        font-size: 1em;
+      }
+
+      /* 图片样式 */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      /* 响应式布局 */
+      @media (max-width: 768px) {
+        td {
+          display: block;
+          width: 100%;
+        }
+        .hoverZoomLink {
+          display: block;
+          margin: auto;
+        }
+      }
+
+      /* 按段调整 */
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        padding: 1em;
+      }
+      .title-section {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .research-section {
+        margin-top: 1em;
+        padding: 1em;
+        border-top: 1px solid #ddd;
+      }
+      .publication-section {
+        padding: 1em;
+        border-top: 1px solid #ddd;
+      }
+      .competition-section {
+        padding: 1em;
+        border-top: 1px solid #ddd;
+      }
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Shujun Xia
-                </p>
-                <p>Hi! I'm a CS junior at <a href="https://cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I'm so fortunate to be advised by Prof. <a href="https://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni Chan</a> and Ms. Chenyang Zhao of <a href="http://visal.cs.cityu.edu.hk/" target="_blank">Video, Image, and Sound Analysis Lab (VISAL)</a> from City University of Hong Kong. 
-                </p>
-		<p>I'm always seeking collaborations of all kinds. Currently I'm applying for the 2025 summer research internship!
-		</p>
-                <p>
-                  I would like to express my deepest gratitude to all those who talked with me and gave me guidance and inspiration when I was a naive student in high school and college.
-                </p>
-                <p>
-                  <a href="mailto:shujunxia2-c@my.cityu.edu.hk">Email</a> &nbsp;/&nbsp;
-                  <a href="data/cv_shujunxia.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/migoxia" target="_blank">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm conducting research on explainable AI for object detection. More specifically, my current research focuses on generating explanation heat maps utilizing the gradients of detector targets.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		<tr>
-			<td style="padding:20px;width:40%;vertical-align:middle">
+    <div class="container">
+      <!-- Header Section -->
+      <div class="title-section">
+        <img src="images/profile.jpg" alt="Profile photo" style="max-width: 150px;">
+        <h1>Shujun Xia</h1>
+        <p>Hi! I'm a CS junior at <a href="https://cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I'm so fortunate to be advised by Prof. <a href="https://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni Chan</a> and Ms. Chenyang Zhao of <a href="http://visal.cs.cityu.edu.hk/" target="_blank">VISAL Lab</a>.</p>
+        <p>I'm currently applying for the 2025 summer research internship!</p>
+        <p>
+          <a href="mailto:shujunxia2-c@my.cityu.edu.hk">Email</a> / 
+          <a href="data/cv_shujunxia.pdf" target="_blank">CV</a> / 
+          <a href="https://github.com/migoxia" target="_blank">Github</a>
+        </p>
+      </div>
 
-					<img src='images/cat.png' width=100% width="160" height="120">
+      <!-- Research Section -->
+      <div class="research-section">
+        <h2>Research</h2>
+        <p>I'm conducting research on explainable AI for object detection. My current work focuses on generating explanation heat maps utilizing the gradients of detector targets.</p>
+      </div>
 
-			</td>
-			<td class="papertitle" style="padding:20px;width:60%;vertical-align:middle">
-<!-- 				<p class="papertitle">Gradient-Based Instance-Specific Visual Explanations for Object Detection</p> -->
-				Gradient-Based Instance-Specific Visual Explanations for Object Detection
-			</td>
-   		 </tr>
-		</tbody>
-	</table>
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-	<tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publication</h2>
-                <p class="papertitle">
-                  Explaining Object Detection through Object Relationships
-		</p>
-		<p>
-		  Shujun Xia, Chenyang Zhao, Antoni Chan. Under review, 2024.
-		</p>
-              </td>
-            </tr>
-          </tbody>
-	</table>
+      <!-- Publication Section -->
+      <div class="publication-section">
+        <h2>Publication</h2>
+        <p class="papertitle">**Explaining Object Detection through Object Relationships**</p>
+        <p>Shujun Xia, Chenyang Zhao, Antoni Chan. Under review, 2024.</p>
+      </div>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-	<tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Competition</h2>
-                <p class="papertitle">
-                  Champion in Data Application Track
-		</p>
-		<p>
-		  China Mobile Group Wutong Cup Big Data Innovation Competition, Regional Final
-		</p>
-              </td>
-            </tr>
-          </tbody>
-	</table>
-			
-	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-	<table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            <tr>
-              <td style="padding:20px;width:40%;vertical-align:middle"><a href="https://global.undergrad.columbia.edu/gcc/global-columbia-collaboratory-spring-2023/women%E2%80%99s-empowerment-msk-spring-2023" target="_blank"><img src="images/msk.png" width=100%></a></td>
-		<td width="60%" valign="center" >  In Spring 2023, I participated in the <a href="https://globalcenters.columbia.edu/content/plastics-global-collaboratory" target="_blank">Global Columbia Collaboratory Plastics: Retelling the Story of Waste</a>, and worked on a storymap to tell the story of <a href="https://www.mskonline.org/" target="_blank">MSK</a> with 2 students from Ashoka University and Columbia University.
-			<br><br>
-			MSK is an NGO based in Bhopal, India that works towards organic and eco-friendly fashion for women by women. Check out our storymap <a href="https://global.undergrad.columbia.edu/gcc/global-columbia-collaboratory-spring-2023/women%E2%80%99s-empowerment-msk-spring-2023" target="_blank"> here</a>.
-		</td>
-	    </tr>
-	</tbody>
-	</table>
-			
-<!-- 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-		<tbody>
-			<tr style="padding:200px">
-                		<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=blcYsGZ2NAAsno3EvRZ5gssiBmTS2jp36Af0ebDh5j4&cl=ffffff&w=a"></script>
-        		</tr>
-		</tbody>
-	</table> -->
-	
-		
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  many thanks to <a href="https://github.com/jonbarron/jonbarron_website" style="font-size: 16px">Jon Barron</a> for this cool template
-		</p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
+      <!-- Competition Section -->
+      <div class="competition-section">
+        <h2>Competition</h2>
+        <p class="papertitle"><strong>Champion</strong> in Data Application Track</p>
+        <p>China Mobile Group Wutong Cup Big Data Innovation Competition, Regional Final</p>
+      </div>
+
+      <!-- Misc Section -->
+      <div class="misc-section">
+        <h2>Miscellanea</h2>
+        <p>In Spring 2023, I participated in the <a href="https://globalcenters.columbia.edu/content/plastics-global-collaboratory" target="_blank">Global Columbia Collaboratory</a>. I worked with a team to create a storymap on the NGO <a href="https://www.mskonline.org/" target="_blank">MSK</a>, based in Bhopal, India.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p style="text-align:right;font-size:small;">
+        Thanks to <a href="https://github.com/jonbarron/jonbarron_website" style="font-size: 16px">Jon Barron</a> for the cool template.
+      </p>
+    </footer>
   </body>
 </html>
