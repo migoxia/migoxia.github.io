@@ -27,6 +27,10 @@
         font-weight: bold;
         font-size: 1.2em;
       }
+      .highlight {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
       p {
         margin: 0.5em 0;
         font-size: 1em;
@@ -36,7 +40,12 @@
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 10px;
+      }
+      .research-img, .misc-img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
       }
 
       /* 响应式布局 */
@@ -48,6 +57,9 @@
         .hoverZoomLink {
           display: block;
           margin: auto;
+        }
+        .research-img, .misc-img {
+          width: 100%;
         }
       }
 
@@ -62,16 +74,8 @@
         text-align: center;
         margin-bottom: 1em;
       }
-      .research-section {
+      .section {
         margin-top: 1em;
-        padding: 1em;
-        border-top: 1px solid #ddd;
-      }
-      .publication-section {
-        padding: 1em;
-        border-top: 1px solid #ddd;
-      }
-      .competition-section {
         padding: 1em;
         border-top: 1px solid #ddd;
       }
@@ -94,28 +98,30 @@
       </div>
 
       <!-- Research Section -->
-      <div class="research-section">
+      <div class="section">
         <h2>Research</h2>
+        <img src="images/research.jpg" alt="Research Image" class="research-img">
         <p>I'm conducting research on explainable AI for object detection. My current work focuses on generating explanation heat maps utilizing the gradients of detector targets.</p>
       </div>
 
       <!-- Publication Section -->
-      <div class="publication-section">
+      <div class="section">
         <h2>Publication</h2>
         <p class="papertitle">**Explaining Object Detection through Object Relationships**</p>
         <p>Shujun Xia, Chenyang Zhao, Antoni Chan. Under review, 2024.</p>
       </div>
 
       <!-- Competition Section -->
-      <div class="competition-section">
+      <div class="section">
         <h2>Competition</h2>
-        <p class="papertitle"><strong>Champion</strong> in Data Application Track</p>
+        <p><span class="highlight">Champion</span> in Data Application Track</p>
         <p>China Mobile Group Wutong Cup Big Data Innovation Competition, Regional Final</p>
       </div>
 
       <!-- Misc Section -->
-      <div class="misc-section">
+      <div class="section">
         <h2>Miscellanea</h2>
+        <img src="images/misc.jpg" alt="Misc Image" class="misc-img">
         <p>In Spring 2023, I participated in the <a href="https://globalcenters.columbia.edu/content/plastics-global-collaboratory" target="_blank">Global Columbia Collaboratory</a>. I worked with a team to create a storymap on the NGO <a href="https://www.mskonline.org/" target="_blank">MSK</a>, based in Bhopal, India.</p>
       </div>
     </div>
