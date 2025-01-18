@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shujun Xia</title>
+    <meta name="author" content="Shujun Xia">
+    <link rel="shortcut icon" href="images/favicon/Kirby.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <style>
+      /* 全局字体样式 */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        text-align: left;
+      }
+      .papertitle {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      .highlight {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      p {
+        margin: 0.5em 0;
+        font-size: 1em;
+      }
+
+      /* 图片样式 */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .research-img, .misc-img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+
+      /* 响应式布局 */
+      @media (max-width: 768px) {
+        td {
+          display: block;
+          width: 100%;
+        }
+        .hoverZoomLink {
+          display: block;
+          margin: auto;
+        }
+        .research-img, .misc-img {
+          width: 100%;
+        }
+      }
+
+      /* 按段调整 */
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        padding: 1em;
+      }
+      .title-section {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .section {
+        margin-top: 1em;
+        padding: 1em;
+        border-top: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="title-section">
+        <img src="images/profile.jpg" alt="Profile photo" style="max-width: 150px;">
+        <h1>Shujun Xia</h1>
+        <p>Hi! I'm a CS junior at <a href="https://cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I'm privilleged to be advised by Prof. <a href="https://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni Chan</a> and Ms. Chenyang Zhao of <a href="http://visal.cs.cityu.edu.hk/" target="_blank">VISAL Lab</a>.</p>
+        <p>I'm currently applying for the 2025 summer research internship!</p>
+        <p>
+          <a href="mailto:shujunxia2-c@my.cityu.edu.hk">Email</a> / 
+          <a href="data/cv_shujunxia.pdf" target="_blank">CV</a> / 
+          <a href="https://github.com/migoxia" target="_blank">Github</a>
+        </p>
+      </div>
+
+      <!-- Research Section -->
+      <div class="section">
+        <h2>Research</h2>
+        <img src="images/cat.png" alt="Research Image" class="research-img">
+        <p>Previously, I have conducted research on explainable AI for object detection, which utilizes gradients w.r.t. feature maps to generate explanation heat maps and analyzes values in attention layer of transformer to quantify object relationships.</p>
+      </div>
+
+      <!-- Publication Section -->
+      <div class="section">
+        <h2>Publication</h2>
+        <p class="papertitle">Explaining Object Detection through Object Relationships</p>
+        <p>Shujun Xia, Chenyang Zhao, Antoni Chan. Under review, 2024.</p>
+      </div>
+
+      <!-- Competition Section -->
+      <div class="section">
+        <h2>Competition</h2>
+        <p>
+          <span class="highlight">National First Prize</span> in Data Application Track 
+          (<a href="wutong_award.pdf" target="_blank">Award Certificate</a>)
+        </p>
+        <p>The 4th China Mobile 'Wutong Cup' National Finals of Big Data Innovation Competition</p>
+        <img src="images/wutong_award.jpg" alt="Award Image" class="research-img">
+      </div>
+
+      <!-- Award Section -->
+      <div class="section">
+        <h2>Award</h2>
+        <p>
+          <span class="highlight">HKSAR Government Scholarship Fund - Talent Development Scholarship 
+          (<a href="tds.pdf" target="_blank">Award Certificate</a>)
+        </p>
+      </div>
+
+
+      <!-- Misc Section -->
+      <div class="section">
+        <h2>Miscellanea</h2>
+        <img src="images/msk.png" alt="Misc Image" class="misc-img">
+        <p>In Spring 2023, I participated in the <a href="https://globalcenters.columbia.edu/content/plastics-global-collaboratory" target="_blank">Global Columbia Collaboratory</a>. I worked with a team to create a storymap on the NGO <a href="https://www.mskonline.org/" target="_blank">MSK</a>, based in Bhopal, India. Check out our storymap <a href="https://global.undergrad.columbia.edu/gcc/global-columbia-collaboratory-spring-2023/women%E2%80%99s-empowerment-msk-spring-2023" target="_blank"> here</a>.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p style="text-align:right;font-size:small;">
+        Thanks to <a href="https://github.com/jonbarron/jonbarron_website" style="font-size: 16px">Jon Barron</a> for the cool template.
+      </p>
+    </footer>
+  </body>
+</html>
