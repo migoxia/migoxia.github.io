@@ -1,0 +1,126 @@
+/* 全局字体样式 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #222;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+p {
+  margin: 0.5em 0;
+  font-size: 1em;
+  color: #555;
+}
+
+/* 链接样式 */
+a {
+  color: #0078D7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 图片样式 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.research-img, .misc-img {
+  margin: 10px 0;
+}
+
+/* 容器布局 */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.section {
+  margin-top: 1.5em;
+  padding: 1em;
+  border-top: 1px solid #ddd;
+}
+
+/* 强调样式 */
+.highlight {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000;
+}
+
+.papertitle {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .title-section img {
+    max-width: 120px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  .hoverZoomLink {
+    display: block;
+    margin: auto;
+  }
+
+  .research-img, .misc-img {
+    width: 100%;
+  }
+}
+
+/* 页脚样式 */
+footer {
+  text-align: right;
+  font-size: 0.9em;
+  margin-top: 2em;
+  padding: 1em 0;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+  font-size: 1em;
+}
+
+footer a:hover {
+  color: #0078D7;
+  text-decoration: none;
+}
