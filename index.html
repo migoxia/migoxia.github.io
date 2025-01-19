@@ -10,8 +10,77 @@
     <link rel="shortcut icon" href="images/Kirby.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<!--     <style>
-    </style> -->
+    <style>
+      /* 全局字体样式 */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        text-align: left;
+      }
+      .papertitle {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      .highlight {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      p {
+        margin: 0.5em 0;
+        font-size: 1em;
+      }
+
+      /* 图片样式 */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .research-img, .misc-img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+
+      /* 响应式布局 */
+      @media (max-width: 768px) {
+        td {
+          display: block;
+          width: 100%;
+        }
+        .hoverZoomLink {
+          display: block;
+          margin: auto;
+        }
+        .research-img, .misc-img {
+          width: 100%;
+        }
+      }
+
+      /* 按段调整 */
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        padding: 1em;
+      }
+      .title-section {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .section {
+        margin-top: 1em;
+        padding: 1em;
+        border-top: 1px solid #ddd;
+      }
+    </style>
   </head>
 
   <body>
@@ -26,7 +95,6 @@
           <a href="mailto:shujunxia2-c@my.cityu.edu.hk">Email</a> / 
           <a href="data/cv_shujunxia.pdf" target="_blank">CV</a> / 
           <a href="https://github.com/migoxia" target="_blank">Github</a>
-          <a href="https://github.com/mylittleriver" target="_blank">Github</a>
         </p>
       </div>
 
@@ -52,7 +120,7 @@
           (<a href="wutong_award.pdf" target="_blank">Award Certificate</a>)
         </p>
         <p>The 4th China Mobile 'Wutong Cup' National Finals of Big Data Innovation Competition</p>
-        <img src="images/wutong_award.jpg" alt="Award Image" class="comp-img">
+        <img src="images/wutong_award.jpg" alt="Award Image" class="research-img">
       </div>
 
       <!-- Award Section -->
