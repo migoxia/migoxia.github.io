@@ -12,27 +12,46 @@
 
     <style>
       /* 全局字体样式 */
+      :root {
+        --main-bg-color: #f4f4f9;
+        --main-text-color: #555;
+        --link-color: #0077cc;
+        --card-bg-color: #ffffff;
+        --shadow-color: rgba(0, 0, 0, 0.1);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --main-bg-color: #1e1e2e;
+          --main-text-color: #e4e4e7;
+          --link-color: #ffa0e2;
+          --card-bg-color: #2e2e3a;
+          --shadow-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
       body {
         font-family: Consolas;
         line-height: 1.6;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f9; /* 浅灰背景 */
+        background-color: var(--main-bg-color);
+        color: var(--main-text-color);
       }
 
       /* 容器样式 */
       .container {
-        background-color: #ffffff; /* 白色背景 */
+        background-color: var(--card-bg-color);
         max-width: 800px;
         margin: 2em auto;
         padding: 1.5em;
         border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        box-shadow: 0 4px 10px var(--shadow-color);
       }
 
       /* 标题样式 */
       h1, h2 {
-        color: #333; /* 深灰色 */
+        color: var(--main-text-color);
       }
 
       h1 {
@@ -42,14 +61,14 @@
 
       h2 {
         font-size: 2em;
-        border-bottom: 2px solid #ddd; /* 下划线分隔 */
+        border-bottom: 2px solid #ddd;
         padding-bottom: 0.2em;
         margin-top: 1.5em;
       }
 
       /* 链接样式 */
       a {
-        color: #ffccf4; /* 蓝色链接 */
+        color: var(--link-color);
         text-decoration: none;
       }
 
@@ -62,50 +81,58 @@
         max-width: 100%;
         height: auto;
         border-radius: 10px;
-        background-color: #f4f4f9;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 图片阴影 */
-        padding: 5px; /* 增加内边距 */
+        background-color: var(--main-bg-color);
+        box-shadow: 0 2px 6px var(--shadow-color);
+        padding: 5px;
+      }
+
+      /* 导航栏样式 */
+      nav {
+        background-color: var(--card-bg-color);
+        padding: 10px 20px;
+        box-shadow: 0 2px 6px var(--shadow-color);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        color: var(--link-color);
+        margin: 0 15px;
+        font-size: 1.2em;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
       }
 
       /* 响应式布局 */
       @media (max-width: 768px) {
-        td {
-          display: block;
-          width: 100%;
+        .container {
+          padding: 1em;
+          margin: 1em auto;
+          max-width: 95%;
         }
-
-        .hoverZoomLink {
-          display: block;
-          margin: auto;
-        }
-
-        .research-img, .misc-img {
-          width: 100%;
-        }
-      }
-
-      /* 强调内容样式 */
-      .highlight {
-        font-size: 1.3em;
-        font-weight: bold;
-      }
-
-      /* 段落样式 */
-      p {
-        margin: 0.5em 0;
-        font-size: 1.2em;
-        color: #555; /* 字体颜色浅灰 */
       }
     </style>
   </head>
 
   <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publication">Publication</a>
+      <a href="#competition">Competition</a>
+      <a href="#award">Award</a>
+      <a href="#miscellanea">Miscellanea</a>
+    </nav>
+
     <div class="container">
       <!-- Header Section -->
       <div class="title-section">
-        <img src="images/profile.jpg" alt="Profile photo" style="max-width: 150px;">
+        <img src="images/profile.jpg" alt="Profile photo" style="max-width: 150px;" loading="lazy">
         <h1>Shujun Xia</h1>
-        <p>Hi! I'm a CS junior at <a href="https://cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I'm privilleged to be advised by Prof. <a href="https://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni Chan</a> and Ms. Chenyang Zhao of <a href="http://visal.cs.cityu.edu.hk/" target="_blank">VISAL Lab</a>.</p>
+        <p>Hi! I'm a CS junior at <a href="https://cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I'm privileged to be advised by Prof. <a href="https://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni Chan</a> and Ms. Chenyang Zhao of <a href="http://visal.cs.cityu.edu.hk/" target="_blank">VISAL Lab</a>.</p>
         <p>I'm currently applying for the 2025 summer research internship!</p>
         <p>
           <a href="mailto:shujunxia2-c@my.cityu.edu.hk">Email</a> / 
@@ -115,32 +142,32 @@
       </div>
 
       <!-- Research Section -->
-      <div class="section">
+      <div class="section" id="research">
         <h2>Research</h2>
-        <img src="images/cat.png" alt="Research Image" class="research-img">
+        <img src="images/cat.png" alt="Research image about explainable AI for object detection" class="research-img" loading="lazy">
         <p>Previously, I have conducted research on explainable AI for object detection, which utilizes gradients w.r.t. feature maps to generate explanation heat maps and analyzes values in attention layer of transformer to quantify object relationships.</p>
       </div>
 
       <!-- Publication Section -->
-      <div class="section">
+      <div class="section" id="publication">
         <h2>Publication</h2>
         <p class="papertitle">Explaining Object Detection through Object Relationships</p>
         <p>Shujun Xia, Chenyang Zhao, Antoni Chan. Under review, 2024.</p>
       </div>
 
       <!-- Competition Section -->
-      <div class="section">
+      <div class="section" id="competition">
         <h2>Competition</h2>
         <p>
           <span class="highlight">National First Prize</span> in Data Application Track 
           (<a href="wutong_award.pdf" target="_blank">Award Certificate</a>)
         </p>
         <p>The 4th China Mobile 'Wutong Cup' National Finals of Big Data Innovation Competition</p>
-        <img src="images/wutong_award.jpg" alt="Award Image" class="research-img">
+        <img src="images/wutong_award.jpg" alt="Award Image" class="research-img" loading="lazy">
       </div>
 
       <!-- Award Section -->
-      <div class="section">
+      <div class="section" id="award">
         <h2>Award</h2>
         <p>
           <span class="highlight">HKSAR Government Scholarship Fund - Talent Development Scholarship</span>
@@ -149,9 +176,9 @@
       </div>
 
       <!-- Misc Section -->
-      <div class="section">
+      <div class="section" id="miscellanea">
         <h2>Miscellanea</h2>
-        <img src="images/msk.png" alt="Misc Image" class="misc-img">
+        <img src="images/msk.png" alt="Misc image about Columbia Collaboratory project" class="misc-img" loading="lazy">
         <p>In Spring 2023, I participated in the <a href="https://globalcenters.columbia.edu/content/plastics-global-collaboratory" target="_blank">Global Columbia Collaboratory</a>. I worked with a team to create a storymap on the NGO <a href="https://www.mskonline.org/" target="_blank">MSK</a>, based in Bhopal, India. Check out our storymap <a href="https://global.undergrad.columbia.edu/gcc/global-columbia-collaboratory-spring-2023/women%E2%80%99s-empowerment-msk-spring-2023" target="_blank"> here</a>.</p>
       </div>
     </div>
