@@ -13,28 +13,48 @@
     <style>
       /* 全局字体样式 */
       body {
-        font-family: Arial, sans-serif;
+        font-family: Fantasy, sans-serif;
         line-height: 1.6;
         margin: 0;
         padding: 0;
+        background-color: #f4f4f9; /* 浅灰背景 */
       }
+
+      /* 容器样式 */
+      .container {
+        background-color: #ffffff; /* 白色背景 */
+        max-width: 800px;
+        margin: 2em auto;
+        padding: 1.5em;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+      }
+
+      /* 标题样式 */
+      h1, h2 {
+        color: #333; /* 深灰色 */
+      }
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+      }
+
       h2 {
         font-size: 1.8em;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-        text-align: left;
+        border-bottom: 2px solid #ddd; /* 下划线分隔 */
+        padding-bottom: 0.2em;
+        margin-top: 1.5em;
       }
-      .papertitle {
-        font-weight: bold;
-        font-size: 1.2em;
+
+      /* 链接样式 */
+      a {
+        color: #007BFF; /* 蓝色链接 */
+        text-decoration: none;
       }
-      .highlight {
-        font-size: 1.1em;
-        font-weight: bold;
-      }
-      p {
-        margin: 0.5em 0;
-        font-size: 1em;
+
+      a:hover {
+        text-decoration: underline;
       }
 
       /* 图片样式 */
@@ -42,11 +62,9 @@
         max-width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-      .research-img, .misc-img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
+        background-color: #f4f4f9;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 图片阴影 */
+        padding: 5px; /* 增加内边距 */
       }
 
       /* 响应式布局 */
@@ -55,30 +73,29 @@
           display: block;
           width: 100%;
         }
+
         .hoverZoomLink {
           display: block;
           margin: auto;
         }
+
         .research-img, .misc-img {
           width: 100%;
         }
       }
 
-      /* 按段调整 */
-      .container {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        padding: 1em;
+      /* 强调内容样式 */
+      .highlight {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #d9534f; /* 红色强调 */
       }
-      .title-section {
-        text-align: center;
-        margin-bottom: 1em;
-      }
-      .section {
-        margin-top: 1em;
-        padding: 1em;
-        border-top: 1px solid #ddd;
+
+      /* 段落样式 */
+      p {
+        margin: 0.5em 0;
+        font-size: 1em;
+        color: #555; /* 字体颜色浅灰 */
       }
     </style>
   </head>
@@ -127,11 +144,10 @@
       <div class="section">
         <h2>Award</h2>
         <p>
-          <span class="highlight">HKSAR Government Scholarship Fund - Talent Development Scholarship 
+          <span class="highlight">HKSAR Government Scholarship Fund - Talent Development Scholarship</span>
           (<a href="tds.pdf" target="_blank">Award Certificate</a>)
         </p>
       </div>
-
 
       <!-- Misc Section -->
       <div class="section">
