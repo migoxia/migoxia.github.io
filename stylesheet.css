@@ -49,6 +49,7 @@ img {
 }
 
 .research-img, .misc-img {
+  max-width: 80%;
   display: block;
   margin: 0 auto;
 }
@@ -60,7 +61,8 @@ img {
 /* 容器布局 */
 .container {
   width: 100%;
-  text-align: center;
+/*   text-align: center;
+   */
   max-width: 800px;
   padding: 1em;
   background: #fff;
