@@ -1,73 +1,73 @@
 body {
-        font-family: Tahoma, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-      }
-      h2 {
-        font-size: 1.8em;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-        text-align: left;
-      }
-      .papertitle {
-        font-weight: bold;
-        font-size: 1.2em;
-      }
-      .highlight {
-        font-size: 1.1em;
-        font-weight: bold;
-      }
-      p {
-        margin: 0.5em 0;
-        font-size: 1em;
-      }
+font-family: Tahoma, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+h2 {
+font-size: 1.8em;
+font-weight: bold;
+margin-bottom: 0.5em;
+text-align: left;
+}
+.papertitle {
+font-weight: bold;
+font-size: 1.2em;
+}
+.highlight {
+font-size: 1.1em;
+font-weight: bold;
+}
+p {
+margin: 0.5em 0;
+font-size: 1em;
+}
 
-      /* 图片样式 */
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-      .research-img, .misc-img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
-      }
-      .comp-img {
-        max-width: 70%;
-        height: auto;
-        margin: 10px 0;
-      }
+/* 图片样式 */
+img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.research-img, .misc-img {
+max-width: 100%;
+height: auto;
+margin: 10px 0;
+}
+.comp-img {
+max-width: 70%;
+height: auto;
+margin: 10px 0;
+}
 
-      /* 响应式布局 */
-      @media (max-width: 768px) {
-        td {
-          display: block;
-          width: 100%;
-        }
-        .hoverZoomLink {
-          display: block;
-          margin: auto;
-        }
-        .research-img, .misc-img {
-          width: 100%;
-        }
-      }
+/* 响应式布局 */
+@media (max-width: 768px) {
+td {
+  display: block;
+  width: 100%;
+}
+.hoverZoomLink {
+  display: block;
+  margin: auto;
+}
+.research-img, .misc-img {
+  width: 100%;
+}
+}
 
-      /* 按段调整 */
-      .container {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        padding: 1em;
-      }
-      .title-section {
-        text-align: center;
-        margin-bottom: 1em;
-      }
-      .section {
-        margin-top: 1em;
-        padding: 1em;
-        border-top: 1px solid #ddd;
-      }
+/* 按段调整 */
+.container {
+width: 100%;
+max-width: 800px;
+margin: auto;
+padding: 1em;
+}
+.title-section {
+text-align: center;
+margin-bottom: 1em;
+}
+.section {
+margin-top: 1em;
+padding: 1em;
+border-top: 1px solid #ddd;
+}
