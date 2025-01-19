@@ -62,7 +62,7 @@ img {
 }
 /* 容器布局 */
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   max-width: 800px;
   padding: 1em;
