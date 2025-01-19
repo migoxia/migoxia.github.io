@@ -42,6 +42,8 @@ a:hover {
 
 /* 图片样式 */
 img {
+  display: block;
+  margin: 0 auto;
   max-width: 80%;
   height: auto;
   border-radius: 10px;
