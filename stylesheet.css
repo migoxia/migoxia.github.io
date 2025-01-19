@@ -52,7 +52,9 @@ img {
 .research-img, .misc-img {
   margin: 10px 0;
 }
-
+.comp-img {
+  max-width: 60%;
+}
 /* 容器布局 */
 .container {
   width: 100%;
