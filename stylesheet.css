@@ -44,22 +44,24 @@ a:hover {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
   height: auto;
   border-radius: 10px;
 }
 
 .research-img, .misc-img {
-  margin: 10px 0;
+  display: block;
+  margin: 0 auto;
 }
 .comp-img {
+  display: block;
+  margin: 0 auto;
   max-width: 60%;
 }
 /* 容器布局 */
 .container {
   width: 100%;
+  text-align: center;
   max-width: 800px;
-  margin: auto;
   padding: 1em;
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
